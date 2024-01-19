@@ -1,0 +1,7 @@
+How to name new cases:
+
+Format: webp
+
+Name: [Brand][Model][color][Mainboard-Size][small/mid/big][rgb/norgb]
+
+--> BrandModelColorMainboardsizeMidRgb.webp

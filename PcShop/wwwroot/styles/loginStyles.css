@@ -1,0 +1,93 @@
+﻿:root {
+    /*define the colors*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --backgroundColor: #292929;
+    --veryDarkGray: #191919;
+}
+
+.loginBackgroundImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/IndexBackground.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.loginBackgroundImageContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 650px;
+    height: 200px;
+
+}
+
+    .loginBackgroundImageContent form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        appearance: none;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+
+        .loginBackgroundImageContent form input {
+            margin-top: 10px;
+            width: 70%;
+            appearance: none;
+            text-decoration: none;
+            background-color: var(--white);
+            font-family: inherit;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            color: var(--black);
+            min-width: 200px;
+            max-width: 500px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+.formBottom {
+    display: flex;
+    justify-content: space-between;
+    width: calc(70% + 10px);
+    min-width: 200px;
+    max-width: 510px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+    .formBottom .twoTiles {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 15px;
+    }
+
+.formbutton .onlyOneTile {
+    width: 50%
+}
+
+.formBottom a {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 5px;
+    font-family: inherit;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}

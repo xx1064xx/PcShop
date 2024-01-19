@@ -1,0 +1,26 @@
+﻿:root {
+    /*define the colors*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --backgroundColor: #292929;
+    --veryDarkGray: #191919;
+}
+
+.footer 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+    background-color: var(--veryDarkGray);
+}
+
+    .footer a img {
+        max-height: 6rem;
+    }
+
+    .footer .andoriumPcFont
+    {
+        font-size: 2rem;
+        font-weight: bold;
+    }

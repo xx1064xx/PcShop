@@ -1,0 +1,60 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model PcShop.Pages.IndexModel
+@{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        @{
+            Html.RenderPartial("_links");
+        }
+
+    </head>
+    <body>
+        <header>
+            @{
+                Html.RenderPartial("_header");
+            }
+        </header>
+        <main>
+            <div class="loginBackgroundImage">
+                <div class="loginBackgroundImageContent">
+                    <div class="loginTitle">
+                        <h1>Login</h1>
+                    </div>
+                    <form>
+                        <input type="email" id="email" placeholder="Email" />
+                        <br />
+                        <input type="password" id="password" placeholder="Passwort" />
+                        <br />
+
+                        <div class="formBottom">
+                            <div class="twoTiles">
+                                <a href="/Account/register">Noch nicht registriert?</a>
+                                <a href="/Account/reset">Hilfe</a>
+                            </div>
+
+                            <button type="submit">anmelden</button>
+
+                        </div>
+                        <div id="login-error"></div>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            @{
+                Html.RenderPartial("_footer");
+            }
+        </footer>
+
+    </body>
+    </html>
+}

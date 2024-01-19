@@ -1,0 +1,116 @@
+﻿:root {
+    /*define the colors*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --backgroundColor: #292929;
+    --veryDarkGray: #191919;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+    .header.notTransparent {
+        background-color: var(--white);
+    }
+
+/* Header Inhalt */
+
+.headerContent
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1800px;
+}
+
+    .headerContent .logo 
+    {
+        display: flex;
+        align-items: center;
+        max-height: 9rem;
+    }
+
+        .headerContent .logo a img {
+            max-height: 5.5rem;
+            margin-left: 30px;
+        }
+
+    .headerContent .profile {
+        display: flex;
+        align-items: center;
+        max-height: 9rem;
+    }
+
+        .headerContent .profile a img {
+            max-height: 5.5rem;
+            margin-right: 30px;
+        }
+/* Header Navbar */
+
+.headerContent nav
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+    .headerContent nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        
+        width: 100%;
+        height: 100%;
+    }
+
+        .headerContent nav ul li 
+        {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            font-size: 1.75rem;
+            font-weight: bold;
+            
+            transition: all 0.5s ease;
+
+        }
+
+            .headerContent nav ul li a {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                transition: all 0.5s ease;
+            }
+
+.gamingPc.notTransparent {
+    color: var(--black);
+}
+
+.officePc.notTransparent {
+    color: var(--black);
+}
+
+.kabel.notTransparent {
+    color: var(--black);
+}
+
+
+.headerContent nav ul li a:hover {
+    font-size: 2rem;
+}
+
+
+
+        

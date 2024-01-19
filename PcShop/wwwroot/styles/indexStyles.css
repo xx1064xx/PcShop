@@ -1,0 +1,82 @@
+﻿:root {
+    /*define the colors*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --backgroundColor: #292929;
+    --veryDarkGray: #191919;
+}
+
+
+.indexBackgroundImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/IndexBackground.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.indexBackgroundImageContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 650px;
+    height: 200px;
+}
+
+.indexBackgroundImageContentTitle 
+{
+
+}
+.indexBackgroundImageContentTitle h1 {
+    font-size: 100px;
+}
+
+.indexBackgroundImageContentButtons 
+{
+    display: flex;
+    width: 75%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.indexBackgroundImageContentButtons div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+    .indexBackgroundImageContentButtons div a {
+        display: flex;
+        justify-content: center;
+        background-color: var(--backgroundColor);
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 3px;
+        color: var(--white);
+        width: 175px;
+        transition: all 0.5s ease;
+    }
+
+    .indexBackgroundImageContentButtons div a:hover {
+        padding: 20px;
+        font-size: 22.5px;
+    }
+
+
+
+.suggestions {
+    position: relative;
+    background-color: var(--backgroundColor);
+    z-index: 999;
+    height: 500px;
+}
+
+

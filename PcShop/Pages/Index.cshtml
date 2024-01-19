@@ -1,0 +1,53 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model PcShop.Pages.IndexModel
+@{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        @{
+            Html.RenderPartial("_links");
+        }
+
+    </head>
+    <body>
+        <header>
+            @{
+                Html.RenderPartial("_header");
+            }
+        </header>
+        <main>
+            <div class="indexBackgroundImage">
+                <div class="indexBackgroundImageContent">
+                    <div class="indexBackgroundImageContentTitle">
+                        <h1>AndoriumPC</h1>
+                    </div>
+                    <div class="indexBackgroundImageContentButtons">
+                        <div>
+                            <a>Special Editions</a>
+                        </div>
+                        <div>
+                            <a>Our Idea</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="suggestions">
+                <h1>Vorschläge</h1>
+            </div>
+        </main>
+
+        <footer>
+            @{
+                Html.RenderPartial("_footer");
+            }
+        </footer>
+
+    </body>
+    </html>
+}
